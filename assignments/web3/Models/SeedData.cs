@@ -40,6 +40,20 @@ namespace web3.Models
                         Description = "Nvidia Corporation is an American multinational technology company incorporated in Delaware and based in Santa Clara, California. It designs graphics processing units for the gaming and professional markets, as well as system on a chip units for the mobile computing and automotive market.",
                         Image = "https://yt3.ggpht.com/ytc/AKedOLRy4UNsg6Ytvoi8Pn-r82YxUmkMsaSm49_rqI8Z6lk=s900-c-k-c0x00ffffff-no-rj",
                         InterestDate = DateTime.Parse("2020-04-01")
+                    },
+                    new Company
+                    {
+                        Name = "PayPal",
+                        Description = "PayPal is an online payment platform that offers individuals and businesses low-cost services. PayPal has been its own company since 2015. 1. In addition to online payments, PayPal also offers a variety of related services including debit cards for payments, credit card readers for small merchants, and lines of credit.",
+                        Image = "https://www.jurist.org/news/wp-content/uploads/sites/4/2022/01/paypal_1642256428.png",
+                        InterestDate = DateTime.Parse("2018-04-01")
+                    },
+                    new Company
+                    {
+                        Name = "PayPal",
+                        Description = "PayPal is an online payment platform that offers individuals and businesses low-cost services. PayPal has been its own company since 2015. 1. In addition to online payments, PayPal also offers a variety of related services including debit cards for payments, credit card readers for small merchants, and lines of credit.",
+                        Image = "https://www.jurist.org/news/wp-content/uploads/sites/4/2022/01/paypal_1642256428.png",
+                        InterestDate = DateTime.Parse("2018-04-01")
                     }
                 );
                 context.SaveChanges();
