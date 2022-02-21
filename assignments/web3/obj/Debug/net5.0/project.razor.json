@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/assignment1/assignment1.csproj",
+  "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/web3.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15616,41 +15616,66 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "assignment1",
+  "RootNamespace": "web3",
   "Documents": [
     {
-      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/assignment1/Pages/Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/Companies/Details.cshtml",
+      "TargetPath": "Pages\\Companies\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/assignment1/Pages/Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/Companies/Delete.cshtml",
+      "TargetPath": "Pages\\Companies\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/assignment1/Pages/_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/assignment1/Pages/Shared/_ValidationScriptsPartial.cshtml",
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/assignment1/Pages/Shared/_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/Companies/Create.cshtml",
+      "TargetPath": "Pages\\Companies\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/assignment1/Pages/_ViewImports.cshtml",
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/assignment1/Pages/Privacy.cshtml",
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/Companies/Edit.cshtml",
+      "TargetPath": "Pages\\Companies\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/Companies/Index.cshtml",
+      "TargetPath": "Pages\\Companies\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/Shared/_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/dylan/Documents/School/WEB315/assignments/web3/Pages/Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
