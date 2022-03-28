@@ -1,0 +1,43 @@
+﻿@page  "/store"
+@namespace DylanReedGroceryApp.Models
+
+<h1>add Food Item to an isle</h1>
+
+<ul>
+    @foreach (var groceryItem in groceryIsles)
+    {
+        <li>
+            <span>@groceryItem.Name</span>
+            <ul>
+                <li>@groceryItem.Category</li>
+                <li>@groceryItem.Calories</li>
+                <li>@groceryItem.Quantity</li>
+            </ul>
+        </li>
+    }
+</ul>
+<input placeholder="Add an item" @bind="itemName" />
+<input placeholder="Add Quantity" @bind="itemQuantity" type="number"/>
+<input placeholder="Add Calories" @bind="itemCalories" type="number" />
+<input placeholder="Add a Category" @bind="itemCategory" />
+<button @onclick="AddItem">Add Item</button>
+
+@{
+    private string itemName;
+    private int itemQuantity;
+    private int itemCalories;
+    private string itemCategory;
+    private List<FoodItem> groceryIsles = new();
+
+    private void AddItem()
+    {
+        if (!string.IsNullOrWhiteSpace(itemName) && !string.IsNullOrWhiteSpace(itemCategory))
+        {
+            groceryIsles.Add(new FoodItem { Name = itemName, Calories = itemCalories, Category = itemCategory, Quantity = itemQuantity });
+            itemName = string.Empty;
+            itemCategory = string.Empty;
+            itemCalories = 0;
+            itemQuantity = 0;
+        }
+    }
+};,
