@@ -9,36 +9,64 @@
         <li>
             <span>@groceryItem.Name</span>
             <ul>
-                <li>@groceryItem.Category</li>
-                <li>@groceryItem.Calories</li>
-                <li>@groceryItem.Quantity</li>
+                <li>Category - @groceryItem.Category</li>
+                <li>Calories - @groceryItem.Calories</li>
+                <li>Quantity - @groceryItem.Quantity</li>
             </ul>
         </li>
     }
 </ul>
-<input placeholder="Add an item" @bind="itemName" />
-<input placeholder="Add Quantity" @bind="itemQuantity" type="number" />
-<input placeholder="Add Calories" @bind="itemCalories" type="number" />
-<input placeholder="Add a Category" @bind="itemCategory" />
+<div style="display: flex; flex-direction: column; gap: 1em">
+    <input placeholder="Add an item" @bind="itemName" />
+    <input placeholder="Add Calories" @bind="itemCalories" type="number" />
+    <input placeholder="Add a Category" @bind="itemCategory" />
+    <div style="display: flex; flex-direction: column;">
+        <p>@itemError</p>
+        <div style="display: flex; align-items: center; gap: 1em">
+            <button @onclick="DecreaseItemQuantity">-</button>
+            <p style="line-height: 1;">@itemQuantity</p>
+            <button @onclick="IncreaseItemQuantity">+</button>
+        </div>
+    </div>
+</div>
 <button @onclick="AddItem">Add Item</button>
 
 @code{
-private string itemName;
-private int itemQuantity;
-private int itemCalories;
-private string itemCategory;
-private List<FoodItem> groceryIsles = new();
+    private string itemName;
+    private int itemQuantity;
+    private int itemCalories;
+    private string itemCategory;
+    private string itemError;
+    public List<FoodItem> groceryIsles = new();
 
-private void AddItem()
-{
-    if (!string.IsNullOrWhiteSpace(itemName) && !string.IsNullOrWhiteSpace(itemCategory))
+    private void AddItem()
     {
-        groceryIsles.Add(new FoodItem { Name = itemName, Calories = itemCalories, Category = itemCategory, Quantity = itemQuantity });
-        itemName = string.Empty;
-        itemCategory = string.Empty;
-        itemCalories = 0;
-        itemQuantity = 0;
+        if (!string.IsNullOrWhiteSpace(itemName) && !string.IsNullOrWhiteSpace(itemCategory))
+        {
+            groceryIsles.Add(new FoodItem { Name = itemName, Calories = itemCalories, Category = itemCategory, Quantity = itemQuantity });
+            itemName = string.Empty;
+            itemCategory = string.Empty;
+            itemCalories = 0;
+            itemQuantity = 0;
+        }
     }
-}
+    private void IncreaseItemQuantity ()
+    {
+        if (itemQuantity == 20) itemError = "Cannot have more than 20 of your item";
+        else
+        {
+            itemQuantity++;
+            itemError = string.Empty;
+        }
+    }
+    private void DecreaseItemQuantity ()
+    {
+        if (itemQuantity == 0) itemError = "Cannot have less than 0 of your item";
+        else
+        {
+            itemQuantity--;
+            itemError = string.Empty;
+        }
+    }
 }
 
