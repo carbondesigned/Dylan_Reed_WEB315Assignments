@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.20
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebAssemblySignalRApp.Server", "BlazorWebAssemblySignalRApp\Server\BlazorWebAssemblySignalRApp.Server.csproj", "{DD7A6F40-634D-47A5-9393-6395E3D903EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebAssemblySignalRApp.Client", "BlazorWebAssemblySignalRApp\Client\BlazorWebAssemblySignalRApp.Client.csproj", "{2AD8CFB9-5BAB-40C5-9CD4-79E2BB3A9D79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebAssemblySignalRApp.Shared", "BlazorWebAssemblySignalRApp\Shared\BlazorWebAssemblySignalRApp.Shared.csproj", "{DCDE6652-6887-4645-BBD5-5E180115EA2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD7A6F40-634D-47A5-9393-6395E3D903EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7A6F40-634D-47A5-9393-6395E3D903EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7A6F40-634D-47A5-9393-6395E3D903EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7A6F40-634D-47A5-9393-6395E3D903EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD8CFB9-5BAB-40C5-9CD4-79E2BB3A9D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD8CFB9-5BAB-40C5-9CD4-79E2BB3A9D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD8CFB9-5BAB-40C5-9CD4-79E2BB3A9D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD8CFB9-5BAB-40C5-9CD4-79E2BB3A9D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCDE6652-6887-4645-BBD5-5E180115EA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDE6652-6887-4645-BBD5-5E180115EA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDE6652-6887-4645-BBD5-5E180115EA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDE6652-6887-4645-BBD5-5E180115EA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABE42954-7EBB-4788-A662-38B18904F6DC}
+	EndGlobalSection
+EndGlobal
