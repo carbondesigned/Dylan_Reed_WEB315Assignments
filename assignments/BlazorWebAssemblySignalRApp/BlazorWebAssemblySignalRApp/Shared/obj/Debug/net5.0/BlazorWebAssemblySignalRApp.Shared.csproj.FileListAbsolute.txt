@@ -1,0 +1,12 @@
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/bin/Debug/net5.0/BlazorWebAssemblySignalRApp.Shared.deps.json
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/bin/Debug/net5.0/BlazorWebAssemblySignalRApp.Shared.dll
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/bin/Debug/net5.0/ref/BlazorWebAssemblySignalRApp.Shared.dll
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/bin/Debug/net5.0/BlazorWebAssemblySignalRApp.Shared.pdb
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/obj/Debug/net5.0/BlazorWebAssemblySignalRApp.Shared.csproj.AssemblyReference.cache
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/obj/Debug/net5.0/BlazorWebAssemblySignalRApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/obj/Debug/net5.0/BlazorWebAssemblySignalRApp.Shared.AssemblyInfoInputs.cache
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/obj/Debug/net5.0/BlazorWebAssemblySignalRApp.Shared.AssemblyInfo.cs
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/obj/Debug/net5.0/BlazorWebAssemblySignalRApp.Shared.csproj.CoreCompileInputs.cache
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/obj/Debug/net5.0/BlazorWebAssemblySignalRApp.Shared.dll
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/obj/Debug/net5.0/ref/BlazorWebAssemblySignalRApp.Shared.dll
+/Users/dylan/Documents/School/WEB315/assignments/BlazorWebAssemblySignalRApp/BlazorWebAssemblySignalRApp/Shared/obj/Debug/net5.0/BlazorWebAssemblySignalRApp.Shared.pdb

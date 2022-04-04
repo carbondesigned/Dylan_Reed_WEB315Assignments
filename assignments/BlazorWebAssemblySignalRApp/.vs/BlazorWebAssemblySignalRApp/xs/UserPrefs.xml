@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{DD7A6F40-634D-47A5-9393-6395E3D903EE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorWebAssemblySignalRApp/Client/Pages/Index.razor">
+    <Files>
+      <File FileName="BlazorWebAssemblySignalRApp/Server/Hubs/ChatHub.cs" Line="13" Column="2" />
+      <File FileName="BlazorWebAssemblySignalRApp/Server/Startup.cs" Line="62" Column="55" />
+      <File FileName="BlazorWebAssemblySignalRApp/Client/Pages/Index.razor" Line="6" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlazorWebAssemblySignalRApp" expanded="True">
+            <Node name="BlazorWebAssemblySignalRApp.Client" expanded="True">
+              <Node name="Pages" expanded="True" />
+            </Node>
+            <Node name="BlazorWebAssemblySignalRApp.Server" expanded="True" selected="True">
+              <Node name="Hubs" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BlazorWebAssemblySignalRApp.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
