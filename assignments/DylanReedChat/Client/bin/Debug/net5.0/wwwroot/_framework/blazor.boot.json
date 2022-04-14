@@ -203,15 +203,15 @@
       "mscorlib.dll": "sha256-CbcIR45\/xUFaZJqGIle6bb7v2kWYjp4kOFpKNnCkd4I=",
       "netstandard.dll": "sha256-qE0Q70OyVlHYY\/Y3nwMjfh+zissea9uhfvWMvPWfI7w=",
       "System.Private.CoreLib.dll": "sha256-pdkcl2+OojCfrhxX5eFmKI30wAmhL6s+sCLp7s175k0=",
-      "DylanReedChat.Shared.dll": "sha256-csOG38IXdPJBTuR6ENeTr581\/gUnBlSl1Z4uCoVVf\/w=",
-      "DylanReedChat.Client.dll": "sha256-HT5fy3+Z35PVUMbJA4xxrrYYhv2Qk6RniWyACYFirK4="
+      "DylanReedChat.Shared.dll": "sha256-ekJcUMxQ\/09E+qhAHqhEz1JItMUkv1sW4RU2U+UefpY=",
+      "DylanReedChat.Client.dll": "sha256-4lVxQ+MeRGND9L5iWPxaX6PgGNf1cPDMTiVAVxivAH4="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "DylanReedChat.Shared.pdb": "sha256-b1WjDwnmj65HMr5px8LI3bgTCesvJ+TVSOpZ0lMZwto=",
-      "DylanReedChat.Client.pdb": "sha256-faFK+7p8zAv0TU502PJAUb6BCcPgyz3Dd2eQl\/q6Jr4="
+      "DylanReedChat.Shared.pdb": "sha256-3YtRHgii5mhTpITX8LNQuCd+Wdc6bD84+CCN4XnQDg0=",
+      "DylanReedChat.Client.pdb": "sha256-vBML4IQly16jZdzuIhYZ7+N\/UCigPce\/DPWp+PTcUMs="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-ootDKSA6cNAbgJLmPhrHsPVvVqkGEYdRZxucC22LWjw=",

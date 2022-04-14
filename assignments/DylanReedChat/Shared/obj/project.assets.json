@@ -20,7 +20,7 @@
       "outputPath": "/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/dylan/.config/NuGet/NuGet.Config"
+        "/Users/dylan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

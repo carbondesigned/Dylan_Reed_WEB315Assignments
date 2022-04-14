@@ -9,19 +9,44 @@
     typing a message. *@
 
 <section class="chat">
+    <div id="messagesList" class="messages">
+        <div class="other">
+            <ul>
+                @foreach (var message in messages)
+                {
+                    @if (!message.Contains($"{nameInput}:"))
+                    {
+                        <li>
+                            <span>@(message == null ? "" : message)</span>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
 
-    <ul id="messagesList" class="messages">
-        @foreach (var message in messages)
+        <div class="recipient">
+            <ul>
+                @foreach (var message in messages)
+                {
+                    @if (message.Contains($"{nameInput}:"))
+                    {
+                        <li>
+                            <span>@(message == null ? "" : message)</span>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+
+    </div>
+
+    <ul class="typing-indicators">
+        <li class="indicator">Test</li>
+        @foreach (var indicator in typingIndicators)
         {
-            <li>@message</li>
-
-            @if (isTyping)
-            {
-                <li>@nameInput is typing</li>
-            }
+            <li class="indicator">@indicator</li>
         }
     </ul>
-
 
     <div class="chat-form">
         <div class="inputs">
@@ -34,28 +59,21 @@
             <div class="form-group">
                 <label>
                     Message:
-                    <input @bind="messageInput" @onfocus="() => isTyping = true" @onblur="() => isTyping = false"
-                           size="50" />
+                    <input @bind="messageInput" @onfocus="TypingIndicator" size="50" />
                 </label>
             </div>
         </div>
         <button @onclick="Send" disabled="@(!IsConnected)">Send</button>
     </div>
-    <p>
-        @user
-    </p>
 </section>
 
 @code {
     private HubConnection hubConnection;
-    private List<string>
-    messages = new List<string>
-    ();
+    private List<string> messages = new List<string>();
+    private List<string> typingIndicators = new List<string>();
+    private string connectionId;
     private string nameInput;
     private string messageInput;
-
-    private bool isTyping = false;
-    private string user;
 
     protected override async Task OnInitializedAsync()
     {
@@ -66,22 +84,25 @@
         hubConnection.On<string, string>
         ("ReceiveMessage", (name, message) =>
         {
-            var encodedMsg = $"{name}: {message}";
-            messages.Add(encodedMsg);
+            var msg = $"{name}: {message} {@DateTime.Now.ToString("h:mm tt")}";
+            messages.Add(msg);
             messageInput = string.Empty;
             StateHasChanged();
         });
-        hubConnection.On<string>
-        ("GetUserId", (userId) =>
+        hubConnection.On<string, string>("TypingIndicator", (name, msg) =>
         {
-            user = userId;
+            var typingMessage = $"{name} {msg} {@DateTime.Now.ToString("h:mm tt")}";
+            typingIndicators.Add(typingMessage);
             StateHasChanged();
         });
         await hubConnection.StartAsync();
     }
 
     async Task Send() =>
-        await hubConnection.SendAsync("SendMessage", nameInput, messageInput);
+    await hubConnection.InvokeAsync("SendMessage", nameInput, messageInput);
+
+    async Task TypingIndicator() =>
+    await hubConnection.SendAsync("TypingIndicator", nameInput, "is typing");
 
     public bool IsConnected =>
     hubConnection.State == HubConnectionState.Connected;
