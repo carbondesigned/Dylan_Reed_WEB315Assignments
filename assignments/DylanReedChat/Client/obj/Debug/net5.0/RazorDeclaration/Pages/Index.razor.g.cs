@@ -82,63 +82,14 @@ using DylanReedChat.Client.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/Pages/Index.razor"
-using Microsoft.AspNetCore.SignalR.Client;
-
-#line default
-#line hidden
-#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase, IAsyncDisposable
+    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 29 "/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/Pages/Index.razor"
-       
-    private HubConnection hubConnection;
-    private List<string> messages = new List<string>();
-    private string nameInput;
-    private string messageInput;
-
-    protected override async Task OnInitializedAsync()
-    {
-        hubConnection = new HubConnectionBuilder()
-            .WithUrl(NavigationManager.ToAbsoluteUri("/chathub"))
-            .Build();
-
-        hubConnection.On<string, string>("ReceiveMessage", (name, message) =>
-        {
-            var encodedMsg = $"{name}: {message}";
-            messages.Add(encodedMsg);
-            StateHasChanged();
-        });
-
-        await hubConnection.StartAsync();
-    }
-
-    async Task Send() =>
-        await hubConnection.SendAsync("SendMessage", nameInput, messageInput);
-
-    public bool IsConnected =>
-        hubConnection.State == HubConnectionState.Connected;
-
-    public async ValueTask DisposeAsync()
-    {
-        if (hubConnection is not null)
-        {
-            await hubConnection.DisposeAsync();
-        }
-    }
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

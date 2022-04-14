@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BSKJKfTHJiGT0WT7bz7zO5ciJrRAGwO9gT8C3ZnRplzM6Opc2QdNxduNQ7fUoMFTYu1D0cRGoGUhhQjlW980uw==",
+  "dgSpecHash": "mPsD2RQ+j1nAmHSQVt0JY6aeVOAk+OH9GblcQAHRouaZRa8Hh4OYQa/0/VlOsZvOJ4VCWleJ05iHY12OfDm9Pw==",
   "success": true,
   "projectFilePath": "/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Server/DylanReedChat.Server.csproj",
   "expectedPackageFiles": [
+    "/Users/dylan/.nuget/packages/blazored.localstorage/4.2.0/blazored.localstorage.4.2.0.nupkg.sha512",
     "/Users/dylan/.nuget/packages/microsoft.aspnetcore.authorization/5.0.15/microsoft.aspnetcore.authorization.5.0.15.nupkg.sha512",
     "/Users/dylan/.nuget/packages/microsoft.aspnetcore.components/5.0.15/microsoft.aspnetcore.components.5.0.15.nupkg.sha512",
     "/Users/dylan/.nuget/packages/microsoft.aspnetcore.components.analyzers/5.0.15/microsoft.aspnetcore.components.analyzers.5.0.15.nupkg.sha512",

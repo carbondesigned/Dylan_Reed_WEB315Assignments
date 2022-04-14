@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using System.Linq;
 using BlazorWebAssemblySignalRApp.Server.Hubs;
 
+
 namespace DylanReedChat.Server
 {
     public class Startup

@@ -90,7 +90,7 @@ using DylanReedChat.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/Shared/NavMenu.razor"
+#line 23 "/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/Shared/NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

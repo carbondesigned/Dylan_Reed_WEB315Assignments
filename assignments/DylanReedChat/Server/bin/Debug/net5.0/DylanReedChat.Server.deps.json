@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "DylanReedChat.Server/1.0.0": {
         "dependencies": {
+          "Blazored.LocalStorage": "4.2.0",
           "DylanReedChat.Client": "1.0.0",
           "DylanReedChat.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "5.0.15",
@@ -311,6 +312,20 @@
         },
         "compile": {
           "DylanReedChat.Server.dll": {}
+        }
+      },
+      "Blazored.LocalStorage/4.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.15"
+        },
+        "runtime": {
+          "lib/net5.0/Blazored.LocalStorage.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Blazored.LocalStorage.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authorization/5.0.15": {
@@ -2306,6 +2321,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Blazored.LocalStorage/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cn6h0QrLw0AIwkx/LiogtBycBFHIeqT/ptXIt871/07qTCvIGXCQZpc1s38wpmTfYLvpha5+5yn6TvIaY9ziyg==",
+      "path": "blazored.localstorage/4.2.0",
+      "hashPath": "blazored.localstorage.4.2.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/5.0.15": {
       "type": "package",
