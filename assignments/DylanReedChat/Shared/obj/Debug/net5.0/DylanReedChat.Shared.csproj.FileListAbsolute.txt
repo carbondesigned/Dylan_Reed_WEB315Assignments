@@ -1,0 +1,11 @@
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/bin/Debug/net5.0/DylanReedChat.Shared.deps.json
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/bin/Debug/net5.0/DylanReedChat.Shared.dll
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/bin/Debug/net5.0/ref/DylanReedChat.Shared.dll
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/bin/Debug/net5.0/DylanReedChat.Shared.pdb
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/obj/Debug/net5.0/DylanReedChat.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/obj/Debug/net5.0/DylanReedChat.Shared.AssemblyInfoInputs.cache
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/obj/Debug/net5.0/DylanReedChat.Shared.AssemblyInfo.cs
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/obj/Debug/net5.0/DylanReedChat.Shared.csproj.CoreCompileInputs.cache
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/obj/Debug/net5.0/DylanReedChat.Shared.dll
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/obj/Debug/net5.0/ref/DylanReedChat.Shared.dll
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Shared/obj/Debug/net5.0/DylanReedChat.Shared.pdb

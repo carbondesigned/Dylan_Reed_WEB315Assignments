@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{F011C72B-37AF-4A64-953A-8EDA2CF86E5A}|Default">
+  <MonoDevelop.Ide.ItemProperties.DylanReedChat.Client FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.DylanReedChat.Server FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.DylanReedChat.Shared FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Client/Pages/Index.razor">
+    <Files>
+      <File FileName="Server/Hubs/ChatHub.cs" Line="13" Column="2" />
+      <File FileName="Server/Startup.cs" Line="64" Column="55" />
+      <File FileName="Client/Pages/Index.razor" Line="64" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DylanReedChat" expanded="True">
+            <Node name="DylanReedChat.Client" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Index.razor" selected="True" />
+              </Node>
+            </Node>
+            <Node name="DylanReedChat.Server" expanded="True">
+              <Node name="Hubs" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
