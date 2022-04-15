@@ -9,5 +9,13 @@ namespace DylanReedChat.Server.Hubs
         {
             await Clients.All.SendAsync("ReceiveMessage", name, message);
         }
+        public async Task TypingIndicator(string name, string message)
+        {
+            await Clients.Others.SendAsync("TypingIndicator", name, message);
+        }
+        public async Task RemoveTypingIndicator(string name)
+        {
+            await Clients.Others.SendAsync("RemoveTypingIndicator", name);
+        }
     }
 }
