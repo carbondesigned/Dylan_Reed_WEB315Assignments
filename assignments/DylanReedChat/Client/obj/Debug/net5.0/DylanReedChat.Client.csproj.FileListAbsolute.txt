@@ -426,6 +426,8 @@
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/RazorDeclaration/Shared/SurveyPrompt.razor.g.cs
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/RazorDeclaration/Components/Chat.razor.g.cs
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/RazorDeclaration/Pages/ChatPage.razor.g.cs
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/RazorDeclaration/Shared/NavMenu.razor.g.cs
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/DylanReedChat.Client.RazorComponent.output.cache
@@ -437,6 +439,8 @@
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/Razor/Shared/SurveyPrompt.razor.g.cs
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/Razor/_Imports.razor.g.cs
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/Razor/Components/Chat.razor.g.cs
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/Razor/Pages/ChatPage.razor.g.cs
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/Razor/Shared/NavMenu.razor.g.cs
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/build-gz/ZPgHxeN1.gz
@@ -643,6 +647,8 @@
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/build-gz/omIqBpQO.gz
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/build-gz/yl+kJkPx.gz
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/build-gz/Qhu4j2rE.gz
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/scopedcss/Components/Chat.razor.rz.scp.css
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/scopedcss/Pages/ChatPage.razor.rz.scp.css
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/scopedcss/Shared/MainLayout.razor.rz.scp.css
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/scopedcss/Shared/NavMenu.razor.rz.scp.css
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/scopedcss/bundle/DylanReedChat.Client.styles.css
@@ -654,5 +660,3 @@
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/DylanReedChat.Client.dll
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/ref/DylanReedChat.Client.dll
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/DylanReedChat.Client.pdb
-/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/RazorDeclaration/Pages/ChatPage.razor.g.cs
-/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Client/obj/Debug/net5.0/Razor/Pages/ChatPage.razor.g.cs

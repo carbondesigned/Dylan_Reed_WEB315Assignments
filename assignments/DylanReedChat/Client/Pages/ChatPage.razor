@@ -2,54 +2,16 @@
 @using Microsoft.AspNetCore.SignalR.Client
 @inject NavigationManager NavigationManager
 @implements IAsyncDisposable
-
-
-@* a user has entered their name in the first input box of the chat component, when they focus on the message input, any
-    other users connected to the server will see a message to the right of the Send button that says that users name is
-    typing a message. *@
+@using DylanReedChat.Client.Components
 
 <section class="chat">
-    <div id="messagesList" class="messages">
-        <div class="other">
-            <ul>
-                @foreach (var message in messages)
-                {
-                    @if (!message.Contains($"{nameInput}:"))
-                    {
-                        <li>
-                            @(message == null ? "" : message)
-                        </li>
-                    }
-                }
-            </ul>
-        </div>
-
-        <div class="recipient">
-            <ul>
-                @foreach (var message in messages)
-                {
-                    @if (message.Contains($"{nameInput}:"))
-                    {
-                        <li>
-                            @(message == null ? "" : message)
-                        </li>
-                    }
-                }
-            </ul>
-        </div>
-
-    </div>
-
-    <ul class="typing-indicators">
-        @foreach (var indicator in typingIndicators)
-        {
-
-            <li class="indicator">
-                <span>@indicator</span>
-                <span class="dot-flashing"></span>
-            </li>
-        }
-    </ul>
+    <Chat
+        NameInput="@nameInput"
+        MessageInput="@messageInput"
+        Messages="@messages"
+        IsConnected="@IsConnected"
+        TypingIndicators="@typingIndicators"
+     />
 
     <div class="chat-form">
         <div class="inputs">
@@ -69,9 +31,13 @@
 
 @code {
     private HubConnection hubConnection;
+
+    // a list to store messages
     private List<string> messages = new List<string>();
+
+    // a list that uses similar logic to store "who is typing"
     private List<string> typingIndicators = new List<string>();
-    private string connectionId;
+
     private string nameInput;
     private string messageInput;
 
@@ -89,6 +55,8 @@
             messageInput = string.Empty;
             StateHasChanged();
         });
+
+        // listen to who is typing
         hubConnection.On<string, string>("TypingIndicator", (name, msg) =>
         {
             var typingMessage = $"{name} {msg}";
@@ -104,8 +72,8 @@
             var typingMessage = $"{name} is typing";
             if (typingIndicators.Contains(typingMessage))
             {
-                // remove the typing indicator from the list
-                typingIndicators.Remove(typingMessage);
+            // remove the typing indicator from the list
+            typingIndicators.Remove(typingMessage);
                 StateHasChanged();
             }
             StateHasChanged();
@@ -118,6 +86,7 @@
 
     async Task TypingIndicator() =>
     await hubConnection.SendAsync("TypingIndicator", nameInput, "is typing");
+
     async Task RemoveTypingIndicator() =>
     await hubConnection.SendAsync("RemoveTypingIndicator", nameInput);
 

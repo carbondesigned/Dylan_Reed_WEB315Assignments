@@ -1,3 +1,188 @@
+/* /Components/Chat.razor.rz.scp.css */
+.messages[b-hifvi0sgqx] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 75vh;
+}
+
+.typing-indicators[b-hifvi0sgqx] {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    list-style: none !important;
+    margin: 1em 0;
+    padding: 0;
+}
+
+    .typing-indicators .indicator[b-hifvi0sgqx] {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        margin: 0;
+        padding: 1em 4em;
+        background-color: #ebebeb;
+        border-radius: 999px;
+        font-size: 0.75em;
+    }
+
+.other[b-hifvi0sgqx],
+.recipient[b-hifvi0sgqx],
+.other ul[b-hifvi0sgqx],
+.recipient ul[b-hifvi0sgqx] {
+    padding: 0;
+    margin: 0;
+}
+
+.other[b-hifvi0sgqx] {
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+}
+
+    .other ul[b-hifvi0sgqx] {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        list-style: none !important;
+    }
+
+        .other ul li[b-hifvi0sgqx] {
+            padding: 0.5em 2em;
+            width: fit-content;
+            background-color: #00aeff;
+            color: white;
+            border-radius: 999px;
+        }
+
+.recipient[b-hifvi0sgqx] {
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+}
+
+    .recipient ul[b-hifvi0sgqx] {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.5em;
+        list-style: none !important;
+    }
+
+        .recipient ul li[b-hifvi0sgqx] {
+            padding: 0.5em 2em;
+            width: fit-content;
+            background-color: #ebebeb;
+            border-radius: 999px;
+        }
+
+.dot-flashing[b-hifvi0sgqx] {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #00aeff;
+    color: #00aeff;
+    animation: dotFlashing-b-hifvi0sgqx 1s infinite linear alternate;
+    animation-delay: 0.5s;
+}
+
+    .dot-flashing[b-hifvi0sgqx]::before,
+    .dot-flashing[b-hifvi0sgqx]::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot-flashing[b-hifvi0sgqx]::before {
+        left: -15px;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #00aeff;
+        color: #00aeff;
+        animation: dotFlashing-b-hifvi0sgqx 1s infinite alternate;
+        animation-delay: 0s;
+    }
+
+    .dot-flashing[b-hifvi0sgqx]::after {
+        left: 15px;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #00aeff;
+        color: #00aeff;
+        animation: dotFlashing-b-hifvi0sgqx 1s infinite alternate;
+        animation-delay: 1s;
+    }
+
+@keyframes dotFlashing-b-hifvi0sgqx {
+    0% {
+        background-color: #00aeff;
+    }
+
+    50%, 100% {
+        background-color: #ffffff;
+    }
+}
+/* /Pages/ChatPage.razor.rz.scp.css */
+.chat[b-yjkitc3awa] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
+}
+
+.chat-form[b-yjkitc3awa] {
+    display: flex;
+    align-items: center;
+    border-radius: 1em;
+    background-color: #ebebeb;
+    padding: 2em;
+}
+.chat-form .inputs[b-yjkitc3awa] {
+    display: flex;
+    gap: 0.5em;
+    flex: 1;
+}
+
+.chat-form .inputs .form-group[b-yjkitc3awa] {
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.chat-form .inputs .form-group label[b-yjkitc3awa] {
+    display: block;
+    margin: 0 !important;
+}
+
+.chat-form .inputs:nth-child(1) .form-group input[b-yjkitc3awa],
+.chat-form .inputs:nth-child(2) .form-group input[b-yjkitc3awa] {
+    transition: 100ms ease;
+    border: transparent !important;
+    outline: transparent;
+    padding: 0.25em 0.5em;
+    border-radius: 0.5em;
+}
+
+.chat-form .inputs:nth-child(1) .form-group input:focus[b-yjkitc3awa] {
+    outline: solid 1px #00aeff;
+}
+
+.chat-form .inputs:nth-child(2) .form-group[b-yjkitc3awa] {
+    flex: 1;
+}
+
+.chat-form button[b-yjkitc3awa] {
+    outline: transparent;
+    border: transparent;
+    padding: 0.75em 4em;
+    background-color: #00aeff;
+    color: white;
+    border-radius: 999px;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-8omb43wad2] {
     position: relative;

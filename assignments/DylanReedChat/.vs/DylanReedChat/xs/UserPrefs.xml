@@ -1,25 +1,31 @@
 ﻿<Properties StartupConfiguration="{F011C72B-37AF-4A64-953A-8EDA2CF86E5A}|Default">
   <MonoDevelop.Ide.ItemProperties.DylanReedChat.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Client/Pages/ChatPage.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Client/wwwroot/css/app.css">
     <Files>
       <File FileName="Server/Hubs/ChatHub.cs" Line="7" Column="6" />
       <File FileName="Client/Pages/Index.razor" Line="1" Column="1" />
-      <File FileName="Client/Pages/ChatPage.razor" Line="81" Column="40" />
-      <File FileName="Client/wwwroot/css/app.css" Line="105" Column="27" />
-      <File FileName="Server/Startup.cs" Line="9" Column="33" />
-      <File FileName="Server/Program.cs" Line="1" Column="1" />
+      <File FileName="Client/Pages/ChatPage.razor" Line="32" Column="11" />
+      <File FileName="Server/Startup.cs" />
+      <File FileName="Server/Program.cs" />
+      <File FileName="Client/Components/Chat.razor" Line="41" Column="11" />
+      <File FileName="Client/wwwroot/css/app.css" Line="54" Column="1" />
+      <File FileName="Client/Components/EmptyCSSFile.css" Line="1" Column="1" />
+      <File FileName="Client/Pages/ChatPage.razor.css" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DylanReedChat" expanded="True">
             <Node name="DylanReedChat.Client" expanded="True">
+              <Node name="Components" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="ChatPage.razor" selected="True" />
+                <Node name="ChatPage.razor" expanded="True" />
               </Node>
               <Node name="Shared" expanded="True" />
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
+                <Node name="css" expanded="True">
+                  <Node name="app.css" selected="True" />
+                </Node>
               </Node>
             </Node>
             <Node name="DylanReedChat.Server" expanded="True">

@@ -1,0 +1,58 @@
+    <div id="messagesList" class="messages">
+        <div class="other">
+            <ul>
+                @foreach (var message in Messages)
+                {
+                    @if (!message.Contains($"{NameInput}:"))
+                    {
+                        <li>
+                            @(message == null ? "" : message)
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+
+        <div class="recipient">
+            <ul>
+                @foreach (var message in Messages)
+                {
+                    @if (message.Contains($"{NameInput}:"))
+                    {
+                        <li>
+                            @(message == null ? "" : message)
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+
+    </div>
+
+    <ul class="typing-indicators">
+        @foreach (var indicator in TypingIndicators)
+        {
+
+            <li class="indicator">
+                <span>@indicator</span>
+                <span class="dot-flashing"></span>
+            </li>
+        }
+    </ul> 
+@code {
+    [Parameter]
+    public string NameInput { get; set; }
+
+    [Parameter]
+    public string MessageInput { get; set; }
+
+    [Parameter]
+    public bool IsConnected { get; set; }
+
+    [Parameter]
+    public List<string> Messages { get; set; }
+
+    [Parameter]
+    public List<string> TypingIndicators { get; set; }
+
+}
