@@ -1,44 +1,44 @@
-    <div id="messagesList" class="messages">
-        <div class="other">
-            <ul>
-                @foreach (var message in Messages)
+<div id="messagesList" class="messages">
+    <div class="other">
+        <ul>
+            @foreach (var message in Messages)
+            {
+                @if (!message.Contains($"{NameInput}:") || NameInput == "")
                 {
-                    @if (!message.Contains($"{NameInput}:"))
-                    {
-                        <li>
-                            @(message == null ? "" : message)
-                        </li>
-                    }
+                    <li>
+                        @(message == null ? "" : message)
+                    </li>
                 }
-            </ul>
-        </div>
-
-        <div class="recipient">
-            <ul>
-                @foreach (var message in Messages)
-                {
-                    @if (message.Contains($"{NameInput}:"))
-                    {
-                        <li>
-                            @(message == null ? "" : message)
-                        </li>
-                    }
-                }
-            </ul>
-        </div>
-
+            }
+        </ul>
     </div>
 
-    <ul class="typing-indicators">
-        @foreach (var indicator in TypingIndicators)
-        {
+    <div class="recipient">
+        <ul>
+            @foreach (var message in Messages)
+            {
+                @if (message.Contains($"{NameInput}:"))
+                {
+                    <li>
+                        @(message == null ? "" : message)
+                    </li>
+                }
+            }
+        </ul>
+    </div>
 
-            <li class="indicator">
-                <span>@indicator</span>
-                <span class="dot-flashing"></span>
-            </li>
-        }
-    </ul> 
+</div>
+
+<ul class="typing-indicators">
+    @foreach (var indicator in TypingIndicators)
+    {
+
+        <li class="indicator">
+            <span>@indicator</span>
+            <span class="dot-flashing"></span>
+        </li>
+    }
+</ul>
 @code {
     [Parameter]
     public string NameInput { get; set; }

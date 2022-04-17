@@ -67,3 +67,4 @@
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Server/obj/Debug/net5.0/ref/DylanReedChat.Server.dll
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Server/obj/Debug/net5.0/DylanReedChat.Server.pdb
 /Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Server/obj/Debug/net5.0/DylanReedChat.Server.genruntimeconfig.cache
+/Users/dylan/Documents/School/WEB315/assignments/DylanReedChat/Server/bin/Debug/net5.0/DylanReedChat.Server
